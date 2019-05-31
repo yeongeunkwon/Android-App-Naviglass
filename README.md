@@ -1,4 +1,5 @@
 This app is part of a larger project (a pair of glasses), designed to work with a specific Raspberry Pi attached to the glasses and programmed as part of the project. I made the app, while others programmed the pi and designed the hardware of the glasses. 
+
 People often rely on map applications to navigate a route. The intention of the project was to provide the people with an alternative option to navigating themselves through an area, that wouldn’t require looking down at their phone as much, and instead allow them to focus more on what is ahead of them. The glasses use image recognition to display what is ahead of the user. The initial goals for the glasses were to display road names on the roads within the view, and to display directions on the view. 
 The app was written in java. The software tool used was Android Studio, the official integrated development environment for Google's Android operating system, designed specifically for Android development. 
 
