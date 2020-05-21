@@ -1,13 +1,27 @@
-The main code files are located at https://github.com/yeongeunkwon/Android-App-Naviglass/tree/master/app/src/main/java/com/example/naviglass2 
+# Android Application for Naviglass
 
-This Android application is a part of a project called Naviglass, and was designed to work with a particular pair of glasses and a Raspberry Pi attached to the glasses. The app was developed by myself, while others on my team programmed the pi and designed the hardware of the glasses. The app was written in java using Android Studio. 
+## Introduction
+This Android application is one component of a team project named Naviglass. The app was designed to be compatible with a pair of virtual reality eye-glasses and a Raspberry Pi, attached to the glasses, that were engineered for Naviglass. The app was developed by myself, while three other people on the team programmed the pi and designed hardware of the glasses. 
 
-People often rely on map applications to navigate a route. The intention of the project was to provide the people with an alternative option to navigating themselves through an area, that wouldn’t require looking down at their phone as much, and instead allow them to focus more on what is ahead of them. The glasses use image recognition to display what is ahead of the user. The initial goals for the glasses were to display the road names on the roads that are within the camera's field of view, and to display directions on the view. 
+People often rely on map applications on their devices to reach their destination. The intention of Naviglass was to provide an alternative option of navigating through an area that would not require looking down at phones for directions as much, and instead allow users to focus more on the real-life view ahead. 
 
-![alt text](https://raw.githubusercontent.com/yk9326/Android-app-for-project/master/block-diagram.png)
+The app displays a map showing current location and route to the destination. It also sends data containing directions, user's location, etc. to the Raspberry Pi via a Bluetooth connection. The Raspberry Pi and the glasses used image recognition and data sent from the app to display the real-life view ahead to the user wearing the glasses. 
 
-The app's main functions are to retrieve data such as map, origin, destination and route, and to send the data to the Pi via a Bluetooth connection. The data sent to the Pi are used by the Pi to display the view on the glasses. This app serves the purpose of providing functions, such as internet connection (from the 4G network of the device), and the interface to select the destination. On startup, the app displays a list of nearby Bluetooth enabled devices. If no device is discovered, the list is empty. When the user selects the Pi from the list of available devices, the app establishes a Bluetooth connection between the Android phone and the device (the Pi), the phone as the client and the pi as the server. Then, a Google Map is displayed, and the phone’s current location is automatically selected as the origin. The user must select a device from the list in order for the map to be displayed. The Google Map was brought on to be used on the app using Google Maps SDK for Android. The user selects a destination by either entering the address or by clicking the destination on the map. Once a destination is provided, the app retrieves information such as directions, various coordinates, and map images, from Google Maps API. It then draws the entire route on the map, and sends the information in bytes to the Pi, so that the glasses can display the view around the user when travelling. 
+## Documentation
+Please see this repository's [Wiki](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) for documentation and video of using the app. 
 
-It was assumed that the user is facing the same direction as the phone. The app sends the Pi the azimuth of the phone periodically. To send each data to the Pi separately so the Pi would be aware of which data it was receiving, the app splits data in chunks of 900 bytes, and send the chunks to the Pi one at a time. 
-Some features added to the app in consideration for user-friendliness were refreshing the list of nearby Bluetooth devices when the list is swiped down in case of if the Pi is not discovered on the first time, being able to select the destination in more than one way, and periodically checking if GPS location and Bluetooth is still enabled on phone and their permissions allowed.
-In writing the code, various sites on the web were referenced, including Google Maps Platform Documentation. 
+## Installation 
+The instructions below will get the app running on your Android phone for testing purposes. 
+
+**Prerequisites**
+* Android Studio on your desktop 
+* Android phone with OS 4.4 (KitKat) or higher
+
+**Getting Started**
+1. Download this repository as a ZIP and unzip to a folder on your desktop. 
+1. Follow this [guide](https://developer.android.com/training/basics/firstapp/creating-project) to open the repository files on Android Studio, with the following exceptions to the instructions:  
+    * You must select **Java** from the **Language** drop-down menu. 
+    * You must select **API 19: Android 4.4 (KitKat)** in the **Minimum SDK** field. 
+    * After clicking **Finish**, on the top menu, click on File -> Open. Open the folder you downloaded earlier from this repository. 
+1. Follow this [guide](https://developer.android.com/training/basics/firstapp/running-app) to run the app on your Android phone. 
+    * Make sure that Google Play Services is up to date on your phone. 
