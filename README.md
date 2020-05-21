@@ -15,7 +15,7 @@ The instructions below will get the app running on your Android phone for testin
 
 **Prerequisites**
 * Android Studio on your desktop 
-* Android phone with OS 4.4 (KitKat) or higher
+* Android phone with OS 4.4 (KitKat) or higher (which are 98% of Android devices) 
 
 **Getting Started**
 1. Download this repository as a ZIP and unzip to a folder on your desktop. 
