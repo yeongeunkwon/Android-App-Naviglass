@@ -8,20 +8,27 @@ People often rely on map applications on their devices to reach their destinatio
 The app shows a map showing current location and route to the destination to the user. It also sends data containing directions, user's location, etc. to the Raspberry Pi via a Bluetooth connection. The Raspberry Pi and the glasses use image recognition and data sent from the app to display the real-life view ahead to the user wearing the glasses. 
 
 ## Documentation
-Please see this repository's [Wiki](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) for detailed information on functionality and how to use the application. 
+Please refer to the [wiki](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) for detailed information on functionality and how to use the application. 
 
 ## Installation 
-The instructions below will get the app running on your Android phone for testing purposes. 
+For testing and verification, you can download this repository and use Android Studio to generate the app. Alternatively, you can install the app on your phone using the app's [APK](/app/build/outputs/apk/debug/app-debug.apk). 
 
 **Prerequisites**
-* Android Studio on your desktop 
+
 * Android phone with OS 4.4 (KitKat) or higher (which are 98% of Android devices) 
+* Android Studio on your computer
 
 **Getting Started**
-1. Download this repository as a ZIP and unzip to a folder on your desktop. 
-1. Follow this [guide](https://developer.android.com/training/basics/firstapp/creating-project) to open the Naviglass application on Android Studio, with the following exceptions to the instructions:  
-    * Select **Java** from the **Language** drop-down menu. 
-    * On the **Minimum SDK** field, select **API 19: Android 4.4 (KitKat)**. Alternatively, if your Android phone has more recent API, you may select the API of your phone. 
-    * After clicking **Finish**, once the empty project has loaded, click on **File -> Open**. Open the folder you downloaded earlier from this repository. 
-1. Follow this [guide](https://developer.android.com/training/basics/firstapp/running-app) to run the app on your Android phone. 
-    * Make sure that Google Play Services is up to date on your phone. -
+
+To generate application from repository files: 
+1. Download the repository to your computer. 
+1. On Android Studio, click **File -> Open** and open the folder you downloaded. If a pop-up asks, you can either open on a new window or replace the project on the existing window. 
+1. Wait 1-2 minutes for gradle to build configuration. The configuration "app" should show on the top menu: ![configuration](https://user-images.githubusercontent.com/46125838/82724739-ab30c780-9d1b-11ea-8178-065473826559.PNG) 
+1. Follow **Run on a real device** section of this [guide](https://developer.android.com/training/basics/firstapp/running-app#RealDevice). An app called "Naviglass" should be installed to your phone. 
+    * Make sure that Google Play Services on your phone is up to date. 
+    * Note: Application will not run on the Android Studio emulator, as the emulator does not support Bluetooth. 
+
+To install application from APK: 
+1. Follow "Set up your device as follows:" of the section **Run on a real device** of this [guide](https://developer.android.com/training/basics/firstapp/running-app#RealDevice). 
+1. Download the [APK](/app/build/outputs/apk/debug/app-debug.apk) to your phone. 
+1. Click on the APK file to install the Naviglass app. 
