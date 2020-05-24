@@ -1,20 +1,23 @@
 # Naviglass Android Application
 
 ## Introduction
-This Android application is one component of a team project named Naviglass. The app complements a pair of virtual reality eye-glasses and a Raspberry Pi attached to the glasses, that were engineered for the project Naviglass. The app was developed by myself, while three other people on my team programmed the Raspberry Pi and designed hardware of the glasses. 
+**About this repository**
 
-People often rely on map applications on their devices to reach their destination. The intention of Naviglass was to provide an alternative option of navigating through an area that would not require looking down at phones for directions as much, and instead allow users to focus more on the real-life view ahead. 
+This repository contains code for an Android application that was one component of a team project, called Naviglass. The app uses Google Maps API to provide several features that require a map. Also, it sends important data (e.g. location, directions) to another device (a Raspberry Pi) over a Bluetooth connection. 
 
-The app shows a map showing current location and route to the destination to the user. It also sends data containing directions, user's location, etc. to the Raspberry Pi via a Bluetooth connection. The Raspberry Pi and the glasses use image recognition and data sent from the app to display the real-life view ahead to the user wearing the glasses. 
+**About Naviglass, the team project**
 
-## Documentation
-Please refer to the [wiki](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) for detailed information on functionality and how to use the application. 
+People rely on map applications on their devices to reach their destination. The intention of project Naviglass was to provide an alternative option of navigating through an area that would not require looking at phones for directions as much, and instead allow people to focus on the real-life view ahead. Naviglass had objectives similar to that of Google Glass, but hoped to be more intuitive to use by highlighting roads, landmarks, and directions in the user's field of view. Naviglass consisted of a pair of virtual reality eye-glasses, a Raspberry Pi attached to the glasses, and an Android application. The app was developed by myself, and the Pi and the glasses were designed by others on my team. 
+
+## Documentation 
+**Android Application -** Please refer to the [wiki](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) for detailed information on app functionality and how to use the app. 
+
+**Complete Team Project -** For context, check out the [poster](https://www.ece.rutgers.edu/sites/default/files/capstone/capstone2019/posters/S19-10-poster.pdf) for Naviglass. 
 
 ## Installation 
 For testing and verification, you can download this repository and use Android Studio to generate the app. Alternatively, you can install the app on your phone using the app's [APK](/app/build/outputs/apk/debug/app-debug.apk). 
 
 **Prerequisites**
-
 * Android phone with OS 4.4 (KitKat) or higher (which are 98% of Android devices) 
 * Android Studio on your computer
 
@@ -32,3 +35,7 @@ To install application from APK:
 1. Follow "Set up your device as follows:" of the section **Run on a real device** of this [guide](https://developer.android.com/training/basics/firstapp/running-app#RealDevice). 
 1. Download the [APK](/app/build/outputs/apk/debug/app-debug.apk) to your phone. 
 1. Click on the APK file to install the Naviglass app. 
+
+## Credits 
+* Author(s): Yeongeun Kwon 
+* With Guidance By: Capstone Team S19-10 at the Department of Electrical and Computer Engineering, Rutgers University
