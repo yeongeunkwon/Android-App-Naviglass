@@ -3,11 +3,11 @@
 ## Introduction
 **About this repository**
 
-This repository contains code for an Android application that was one component of a team project, called Naviglass. The app uses Google Maps API to provide several features that require a map. Also, it sends important data (e.g. location, directions) to another device (a Raspberry Pi) over a Bluetooth connection. 
+This repository contains code for an Android application that was one component of a team project, called **Naviglass**. The project Naviglass consisted of a pair of virtual reality eye-glasses and a Raspberry Pi attached to the glasses, in addition to this Android application. This app uses Google Maps API to provide several features that require a map. Also, it sends important data (e.g. location, directions) to the Raspberry Pi over a Bluetooth connection. 
 
 **About Naviglass, the team project**
 
-People rely on map applications on their devices to reach their destination. The intention of project Naviglass was to provide an alternative option of navigating through an area that would not require looking at phones for directions as much, and instead allow people to focus on the real-life view ahead. Naviglass had objectives similar to that of Google Glass, but hoped to be more intuitive to use by highlighting roads, landmarks, and directions in the user's field of view. Naviglass consisted of a pair of virtual reality eye-glasses, a Raspberry Pi attached to the glasses, and an Android application. The app was developed by myself, and the Pi and the glasses were designed by others on my team. 
+People rely on map applications on their devices to reach their destination. The intention of project Naviglass was to provide an alternative option of navigating through an area that would not require looking at phones for directions as much, and instead allow people to focus on the real-life view ahead. Naviglass had objectives similar to that of Google Glass, but hoped to be more intuitive to use by highlighting roads, landmarks, and directions in the user's field of view. The app was developed by myself, and the Pi and the glasses were designed by others on my team. 
 
 ## Documentation 
 **Android Application -** Please refer to the [wiki](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) for detailed information on app functionality and how to use the app. 
