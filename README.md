@@ -12,7 +12,7 @@ People rely on map applications on their devices to reach their destination. The
 ## Documentation 
 **Android Application** 
 <br />
-Please refer to the Wiki of this repository for the following: 
+Please refer to the Wiki of this repository for the following contents: 
 * [Wiki Home](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) | Why the App was made for Naviglass, how it works 
 * [Block Diagram](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki/Block-Diagram) | Block Diagram of App
 * [Video Tutorial](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki/Video-Tutorial) | Video Demonstrations of using the app 
