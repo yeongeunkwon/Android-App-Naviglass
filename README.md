@@ -10,9 +10,16 @@ This repository contains code for an Android application that was one component 
 People rely on map applications on their devices to reach their destination. The intention of project Naviglass was to provide an alternative option of navigating through an area that would not require looking at phones for directions as much, and instead allow people to focus on the real-life view ahead. To use Naviglass, you would wear the glasses, open the app, and connect to the Raspberry Pi with Bluetooth from the app. Naviglass had objectives similar to that of Google Glass, but hoped to be more intuitive to use by highlighting roads, landmarks, and directions in the user's field of view. The app was developed by myself, and the Pi and the glasses were designed by others on my team. 
 
 ## Documentation 
-**Android Application -** Please refer to the [wiki](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) for detailed information on app functionality and how to use the app. 
+**Android Application** 
+<br />
+Please refer to the Wiki of this repository for the following: 
+* [Wiki Home](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki) | Why the App was made for Naviglass, how it works 
+* [Block Diagram](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki/Block-Diagram) | Block Diagram of App
+* [Video Tutorial](https://github.com/yeongeunkwon/Android-App-Naviglass/wiki/Video-Tutorial) | Video Demonstrations of using the app 
 
-**Complete Team Project -** For context, check out the [poster](https://www.ece.rutgers.edu/sites/default/files/capstone/capstone2019/posters/S19-10-poster.pdf) for Naviglass. 
+**Complete Team Project** 
+<br />
+For context, check out the [poster](https://www.ece.rutgers.edu/sites/default/files/capstone/capstone2019/posters/S19-10-poster.pdf) for Naviglass. 
 
 ## Installation 
 For testing and verification, you can download this repository and use Android Studio to generate the app. Alternatively, you can install the app on your phone using the app's [APK](/app/build/outputs/apk/debug/app-debug.apk). 
